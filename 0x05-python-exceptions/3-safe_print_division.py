@@ -1,9 +1,16 @@
 #!/usr/bin/python3
-def safe_print_division(a, b):
-    try:
-        result = a / b
-    except ZeroDivisionError:
-        result = None
-    finally:
-        print("Inside result: {}".format(result))
-        return result
+"""class Square that defines a square"""
+
+
+class Square():
+    """square class with it's size and proper validation"""
+
+    def __init__(self, size=0):
+        if (type(size) is not int):
+            raise TypeError("size must be an integer")
+        elif (size < 0):
+            raise ValueError("size must be >= 0")
+        self.__size = size
+
+        def area(self):
+            return self.__size ** 2
