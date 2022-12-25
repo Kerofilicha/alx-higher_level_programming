@@ -15,6 +15,7 @@ if __name__ == "__main__":
     c.execute("""SELECT * FROM states ORDER BY states.id ASC""")
     rows = c.fetchall()
     for row in rows:
-        print(row)
-        c.close()
-        db.close()
+        if row[1][0] == 'N':
+            print(row)
+    c.close()
+    db.close()
