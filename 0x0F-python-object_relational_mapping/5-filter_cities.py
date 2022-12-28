@@ -3,9 +3,9 @@
 # states table of the database hbtn_0e_4_usa.
 # Safe from SQL injections.
 # Usage: ./5-filter_cities.py <mysql username> \
-# <mysql password> \
-# <database name> \
-# <state name searched>
+        # <mysql password> \
+        # <database name> \
+        # <state name searched>
         import sys
         import MySQLdb
 
